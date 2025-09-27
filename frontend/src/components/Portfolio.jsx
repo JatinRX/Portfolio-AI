@@ -213,14 +213,14 @@ const Portfolio = () => {
 
             <div className="gaming-card">
               <div className="flex items-center mb-4">
-                <Brain className="h-8 w-8 text-purple-400 mr-3" />
-                <h3 className="text-2xl font-semibold text-white">AI & Emerging Tech</h3>
+                <Zap className="h-8 w-8 text-yellow-400 mr-3" />
+                <h3 className="text-2xl font-semibold text-white">Tools & Technologies</h3>
               </div>
               <div className="space-y-2">
-                {portfolioData.skills.emerging.map((skill, index) => (
+                {portfolioData.skills.tools.map((skill, index) => (
                   <span
                     key={index}
-                    className="inline-block bg-slate-700 text-purple-400 px-3 py-1 rounded-full text-sm mr-2 mb-2"
+                    className="inline-block bg-slate-700 text-yellow-400 px-3 py-1 rounded-full text-sm mr-2 mb-2"
                   >
                     {skill}
                   </span>
