@@ -20,7 +20,7 @@ export const portfolioData = {
     title: "Dream Cricket 2024",
     subtitle: "Mobile Cricket Gaming",
     company: "Dream Game Studios",
-    description: "Working on India's popular cricket mobile game with 4.6★ rating on Play Store.",
+    description: "Working on India's popular cricket mobile game with 4.6★ rating on Play Store/App Store.",
     myContributions: [
       "Designed and implemented network multiplayer mode for real-time competitive gameplay",
       "Individually handled disconnection and rejoining scenarios in multiplayer",
