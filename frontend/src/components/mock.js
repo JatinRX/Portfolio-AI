@@ -12,7 +12,7 @@ export const portfolioData = {
     youtube: "Jatin Garg",
     location: "Baner, Pune, Maharashtra",
     profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-    bio: "Computer engineer passionate about building interactive experiences that connect people worldwide. With 5+ years in game development, I specialize in creating robust multiplayer systems and engaging gameplay mechanics. Currently exploring how AI can enhance player experiences and streamline development workflows. Always excited about the intersection of technology and creativity."
+    bio: "Computer engineer passionate about building interactive experiences that connect people worldwide. With 5+ years in game development, I specialize in multiplayer systems and engaging gameplay. Currently exploring AI applications in player experiences and development workflows. Always excited about the intersection of technology and creativity."
   },
 
   // Current Major Work - Dream Cricket
