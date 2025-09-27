@@ -42,79 +42,24 @@ export const portfolioData = {
     impact: "Transforming how cricket fans experience their favorite sport on mobile devices, bringing console-quality gaming to smartphones"
   },
 
-  // Future Vision & What Sets Apart
-  futureVision: {
-    title: "The Future of Interactive Entertainment",
-    subtitle: "Where AI Meets Gaming Innovation",
-    pillars: [
+  // Core Strengths & Expertise
+  coreStrengths: {
+    title: "Core Expertise",
+    areas: [
       {
-        title: "AI-Driven Game Development",
-        description: "Pioneering the integration of machine learning in game development workflows, from procedural content generation to intelligent player behavior analysis.",
-        technologies: ["Neural Networks", "Procedural Generation", "Player Behavior AI", "Adaptive Difficulty"],
-        vision: "Creating games that evolve and adapt to each player's unique style and preferences in real-time."
+        title: "Unreal Engine Development",
+        description: "5+ years of hands-on experience with Unreal Engine, specializing in gameplay framework, network multiplayer, and cross-platform development.",
+        skills: ["C++ Gameplay Programming", "Blueprint Scripting", "Network Multiplayer", "UMG UI Systems", "Game Design Patterns"]
       },
       {
-        title: "Next-Generation Multiplayer",
-        description: "Developing advanced networking architectures that support massive multiplayer experiences with zero-latency interactions and intelligent matchmaking.",
-        technologies: ["Cloud Gaming", "Edge Computing", "Predictive Networking", "Smart Matchmaking"],
-        vision: "Building the infrastructure for the next generation of massively multiplayer experiences."
+        title: "Network Multiplayer Systems",
+        description: "Expert in designing and implementing robust multiplayer architectures, handling disconnection/reconnection scenarios and anti-cheat mechanisms.",
+        skills: ["Real-time Networking", "Disconnection Handling", "Anti-cheat Implementation", "Performance Optimization"]
       },
       {
-        title: "Cross-Platform Innovation",
-        description: "Exploring cutting-edge technologies like VR/AR integration, blockchain gaming, and cloud-native game streaming solutions.",
-        technologies: ["VR/AR Integration", "Blockchain Gaming", "Cloud Streaming", "Cross-Platform Sync"],
-        vision: "Breaking down barriers between platforms to create truly unified gaming experiences."
-      }
-    ]
-  },
-
-  // What Sets Me Apart
-  uniqueValue: {
-    title: "What Sets Me Apart",
-    differentiators: [
-      {
-        title: "Technical Excellence & Innovation Bridge",
-        description: "Unique combination of deep technical expertise in traditional game development with cutting-edge AI/ML knowledge, positioning me at the forefront of next-generation game development.",
-        icon: "⚡",
-        details: [
-          "5+ years of production-grade game development experience",
-          "Proven track record with 10M+ download games",
-          "Active research in AI applications for game development",
-          "Cross-disciplinary expertise spanning gameplay, networking, and AI"
-        ]
-      },
-      {
-        title: "Scale-Focused Problem Solving",
-        description: "Specialized in architecting solutions for massive-scale multiplayer games, with proven ability to handle millions of concurrent users and real-time interactions.",
-        icon: "🚀",
-        details: [
-          "Real-time multiplayer systems serving millions",
-          "Performance optimization for mobile platforms",
-          "Scalable anti-cheat and security implementations",
-          "Data-driven analytics and player behavior insights"
-        ]
-      },
-      {
-        title: "Future-Forward Vision",
-        description: "Continuously exploring emerging technologies and their applications in gaming, from AI-enhanced gameplay to blockchain integration and cloud gaming solutions.",
-        icon: "🔮",
-        details: [
-          "AI/ML integration in game mechanics and development workflows",
-          "Blockchain gaming and digital asset management research",
-          "Cloud gaming and streaming technology exploration",
-          "VR/AR integration with traditional gameplay mechanics"
-        ]
-      },
-      {
-        title: "Industry Leadership & Mentorship", 
-        description: "Proven track record of technical leadership, team management, and knowledge sharing, with experience guiding teams through complex technical challenges.",
-        icon: "👥",
-        details: [
-          "Led cross-functional teams of 60+ members",
-          "Mentored 10+ developers in game programming",
-          "Reduced development iteration time by 50% through custom tooling",
-          "Created scalable development workflows and best practices"
-        ]
+        title: "Leadership & Team Development",
+        description: "Proven experience in leading cross-functional teams and mentoring developers, with a track record of successful project deliveries.",
+        skills: ["Team Leadership", "Technical Mentorship", "Cross-functional Collaboration", "Tool Development"]
       }
     ]
   },
