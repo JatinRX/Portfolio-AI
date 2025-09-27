@@ -99,32 +99,53 @@ export const portfolioData = {
       role: "Senior Software Engineer - Gameplay",
       period: "July 2023 - Present",
       achievements: [
-        "Leading gameplay development for DREAM CRICKET 24 (4.6★ rating, 10M+ downloads)",
-        "Architected network multiplayer infrastructure supporting real-time competitive gameplay",
-        "Developed sophisticated disconnection/reconnection systems",
-        "Created anti-cheat mechanisms maintaining fair competitive environment",
-        "Designed interactive onboarding experience improving retention by 35%"
+        "Working on DREAM CRICKET 24 (4.6★ rating on Play Store)",
+        "Designed and implemented network multiplayer mode",
+        "Individually handled disconnection and rejoining scenarios", 
+        "Implemented anti-hack strategies to ensure fair gameplay",
+        "Created interactive user gameplay onboarding for first-time users",
+        "Worked on Game Analytics, Cameras, and UI systems"
       ]
     },
     {
       company: "Dream Game Studios",
       location: "Pune", 
       role: "Gameplay Software Engineer",
-      period: "Feb 2022 - June 2023",
+      period: "February 2022 - June 2023",
       achievements: [
-        "Implemented dynamic audio and commentary systems",
-        "Developed AI-driven shot selection algorithms",
-        "Created custom tools suite reducing iteration time by 50%"
+        "Implemented Audio and Commentary systems in the game",
+        "Worked on shot training and shot selection algorithm for Batting",
+        "Developed various in-house tools for Design and Art teams"
       ]
     },
     {
       company: "Games24x7",
       location: "Bangalore",
       role: "Software Development Engineer", 
-      period: "Dec 2021 - Feb 2022",
+      period: "December 2021 - February 2022",
       achievements: [
-        "Led Unity migration project for Rummy Circle",
-        "Optimized performance and user experience"
+        "Worked on migrating the Rummy Circle game to Unity"
+      ]
+    },
+    {
+      company: "Amadeus Software Labs",
+      location: "Bangalore",
+      role: "Software Engineer", 
+      period: "July 2020 - December 2021",
+      achievements: [
+        "Developed responsive Angular web app for flight bookings",
+        "Worked with cross-border teams in scaled agile framework"
+      ]
+    },
+    {
+      company: "Amadeus Software Labs",
+      location: "Bangalore",
+      role: "Software Intern", 
+      period: "January 2020 - May 2020",
+      achievements: [
+        "Created chatbot using Rasa framework",
+        "Added ability to understand unintentional spelling mistakes",
+        "Integrated sentiment analysis capabilities"
       ]
     }
   ],
