@@ -503,34 +503,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">What Colleagues Say</h2>
-            <p className="text-xl text-slate-300">Testimonials from industry professionals</p>
-          </div>
-
-          <div className="gaming-grid">
-            {portfolioData.testimonials.map((testimonial, index) => (
-              <div key={index} className="gaming-card">
-                <div className="flex items-center mb-4">
-                  <img
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full mr-4 border-2 border-green-400/30"
-                  />
-                  <div>
-                    <h4 className="text-lg font-semibold text-white">{testimonial.name}</h4>
-                    <p className="text-green-400 text-sm">{testimonial.role}</p>
-                  </div>
-                </div>
-                <p className="text-slate-300 italic">"{testimonial.content}"</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Testimonials Section Removed */}
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-slate-800/30">
