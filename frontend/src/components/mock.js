@@ -3,15 +3,17 @@
 export const portfolioData = {
   personal: {
     name: "Jatin Garg",
-    title: "Game Developer & AI Enthusiast",
-    tagline: "Building Tomorrow's Interactive Experiences Through Code & Innovation",
+    title: "Senior Software Engineer",
+    tagline: "Seasoned Unreal Engine Game Developer with 5+ Years of Experience",
     email: "jatingargwork@gmail.com",
-    phone: "+91-9876543210", // Placeholder
-    whatsapp: "919876543210", // Placeholder
+    phone: "+91-94784-03862",
+    whatsapp: "919478403862",
     linkedin: "linkedin.com/in/jatinrx",
-    location: "Pune, Maharashtra, India",
+    twitter: "jatin_rx",
+    youtube: "Jatin Garg",
+    location: "Baner, Pune, Maharashtra",
     profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
-    bio: "Senior Unreal Engine Developer with 5+ years of expertise in gameplay programming, network multiplayer systems, and cross-platform game development. Currently spearheading gameplay features for top-rated mobile games while actively exploring AI applications in game development."
+    bio: "Seasoned Unreal Engine Game Developer with 5+ Years of Experience. Strong Proficiency in C++, Blueprint Scripting, Network Multiplayer. Experienced in working with Cross-Functional Development Teams."
   },
 
   // Current Major Work - Dream Cricket
