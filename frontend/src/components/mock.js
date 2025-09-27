@@ -90,7 +90,7 @@ export const portfolioData = {
       role: "Senior Software Engineer - Gameplay",
       period: "July 2023 - Present",
       achievements: [
-        "Working on DREAM CRICKET 24 (4.6★ rating on Play Store)",
+        "Working on DREAM CRICKET 24 (4.6★ rating on Play Store/App Store)",
         "Designed and implemented network multiplayer mode",
         "Individually handled disconnection and rejoining scenarios", 
         "Implemented anti-hack strategies to ensure fair gameplay",
