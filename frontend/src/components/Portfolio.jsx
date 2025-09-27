@@ -350,63 +350,106 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Future Vision & What Sets Apart */}
+      {/* Core Strengths Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold gradient-text mb-4">{portfolioData.futureVision.title}</h2>
-            <p className="text-xl text-slate-300">{portfolioData.futureVision.subtitle}</p>
-          </div>
-
-          <div className="gaming-grid mb-16">
-            {portfolioData.futureVision.pillars.map((pillar, index) => (
-              <div key={index} className="gaming-card">
-                <h3 className="text-2xl font-semibold text-white mb-3">{pillar.title}</h3>
-                <p className="text-slate-300 mb-4">{pillar.description}</p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {pillar.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="text-sm bg-purple-400/10 text-purple-400 px-2 py-1 rounded border border-purple-400/20"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="bg-slate-700/30 border border-slate-600 rounded-lg p-4">
-                  <p className="text-slate-300 italic text-sm">"{pillar.vision}"</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* What Sets Me Apart */}
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">{portfolioData.uniqueValue.title}</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">{portfolioData.coreStrengths.title}</h2>
+            <p className="text-xl text-slate-300">Key areas of technical expertise and specialization</p>
           </div>
 
           <div className="gaming-grid">
-            {portfolioData.uniqueValue.differentiators.map((diff, index) => (
-              <div key={index} className="gaming-card group">
-                <div className="flex items-center mb-4">
-                  <span className="text-3xl mr-4">{diff.icon}</span>
-                  <h3 className="text-xl font-semibold text-white group-hover:text-green-400 transition-colors">
-                    {diff.title}
-                  </h3>
-                </div>
-                <p className="text-slate-300 mb-4">{diff.description}</p>
-                <ul className="space-y-2">
-                  {diff.details.map((detail, detailIndex) => (
-                    <li key={detailIndex} className="flex items-start">
-                      <ChevronRight className="h-4 w-4 text-green-400 mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-slate-400 text-sm">{detail}</span>
-                    </li>
+            {portfolioData.coreStrengths.areas.map((area, index) => (
+              <div key={index} className="gaming-card">
+                <h3 className="text-2xl font-semibold text-white mb-3">{area.title}</h3>
+                <p className="text-slate-300 mb-4">{area.description}</p>
+                
+                <div className="flex flex-wrap gap-2">
+                  {area.skills.map((skill, skillIndex) => (
+                    <span
+                      key={skillIndex}
+                      className="text-sm bg-green-400/10 text-green-400 px-3 py-1 rounded border border-green-400/20"
+                    >
+                      {skill}
+                    </span>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership & Education Section */}
+      <section className="py-20 bg-slate-800/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">Leadership & Education</h2>
+            <p className="text-xl text-slate-300">Academic achievements and leadership experience</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            {/* Education */}
+            <div className="gaming-card">
+              <h3 className="text-2xl font-semibold text-white mb-4 flex items-center">
+                <Award className="h-6 w-6 text-green-400 mr-3" />
+                Education
+              </h3>
+              
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-lg font-semibold text-green-400">{portfolioData.education.degree}</h4>
+                  <p className="text-slate-300">{portfolioData.education.institution}</p>
+                  <p className="text-slate-400 text-sm">{portfolioData.education.period} • CGPA: {portfolioData.education.cgpa}</p>
+                </div>
+                
+                <div className="border-t border-slate-600 pt-4">
+                  <h4 className="text-lg font-semibold text-green-400">{portfolioData.education.additionalEducation.program}</h4>
+                  <p className="text-slate-300">{portfolioData.education.additionalEducation.institution}</p>
+                  <p className="text-slate-400 text-sm">{portfolioData.education.additionalEducation.period}</p>
+                </div>
+
+                <div className="border-t border-slate-600 pt-4">
+                  <h5 className="text-md font-semibold text-white mb-2">Certifications</h5>
+                  {portfolioData.education.certifications.map((cert, index) => (
+                    <span
+                      key={index}
+                      className="inline-block bg-slate-700 text-slate-300 px-2 py-1 rounded text-sm mr-2 mb-2"
+                    >
+                      {cert}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Leadership Roles */}
+            <div className="gaming-card">
+              <h3 className="text-2xl font-semibold text-white mb-4 flex items-center">
+                <Users className="h-6 w-6 text-blue-400 mr-3" />
+                Leadership Experience
+              </h3>
+              
+              <div className="space-y-4">
+                {portfolioData.leadership.map((role, index) => (
+                  <div key={index} className="border-b border-slate-600 pb-3 last:border-b-0">
+                    <div className="flex justify-between items-start mb-2">
+                      <h4 className="text-lg font-semibold text-blue-400">{role.role}</h4>
+                      <span className="text-xs text-slate-400 bg-slate-700 px-2 py-1 rounded">{role.period}</span>
+                    </div>
+                    <p className="text-green-400 text-sm mb-2">{role.organization}</p>
+                    <p className="text-slate-300 text-sm mb-2">{role.description}</p>
+                    <div className="flex flex-wrap gap-1">
+                      {role.achievements.map((achievement, achIndex) => (
+                        <span key={achIndex} className="text-xs bg-slate-700 text-slate-400 px-2 py-1 rounded">
+                          {achievement}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
