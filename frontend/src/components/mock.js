@@ -3,16 +3,15 @@
 export const portfolioData = {
   personal: {
     name: "Jatin Garg",
-    title: "Senior Software Engineer",
-    tagline: "Seasoned Unreal Engine Game Developer with 5+ Years of Experience",
+    title: "Game Developer & AI Enthusiast",
+    tagline: "Building Tomorrow's Interactive Experiences Through Code & Innovation",
     email: "jatingargwork@gmail.com",
     phone: "+91-94784-03862",
-    whatsapp: "919478403862",
     linkedin: "linkedin.com/in/jatinrx",
     twitter: "jatin_rx",
     youtube: "Jatin Garg",
     location: "Baner, Pune, Maharashtra",
-    profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+    profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
     bio: "Seasoned Unreal Engine Game Developer with 5+ Years of Experience. Strong Proficiency in C++, Blueprint Scripting, Network Multiplayer. Experienced in working with Cross-Functional Development Teams."
   },
 
