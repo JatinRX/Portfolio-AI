@@ -498,7 +498,7 @@ const Portfolio = () => {
             </p>
           </div>
 
-          <div className="gaming-grid mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-2xl mx-auto">
             <a
               href={`mailto:${portfolioData.personal.email}`}
               className="gaming-card group text-center hover:scale-105 transition-transform"
@@ -507,16 +507,6 @@ const Portfolio = () => {
               <h3 className="text-xl font-semibold text-white mb-2">Email Me</h3>
               <p className="text-slate-300">Drop me a line directly</p>
               <p className="text-green-400 mt-2 text-sm">{portfolioData.personal.email}</p>
-            </a>
-
-            <a
-              href={`tel:${portfolioData.personal.phone}`}
-              className="gaming-card group text-center hover:scale-105 transition-transform"
-            >
-              <MessageCircle className="h-12 w-12 text-green-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
-              <p className="text-slate-300">Direct phone contact</p>
-              <p className="text-green-400 mt-2 text-sm">{portfolioData.personal.phone}</p>
             </a>
 
             <a
