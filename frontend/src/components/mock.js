@@ -214,12 +214,52 @@ export const portfolioData = {
     institution: "Thapar Institute of Engineering & Technology, Patiala", 
     period: "2016-2020",
     cgpa: "8.85/10",
+    additionalEducation: {
+      program: "Game Development - Cohort Program",
+      institution: "Avalon Meta Pro-league",
+      period: "September 2020 - August 2021"
+    },
     certifications: [
-      "Neural Networks and Deep Learning - Coursera/DeepLearning.AI",
-      "SQL Fundamentals - Advanced Database Management",
-      "Unreal Engine Certified Developer"
+      "Neural Networks and Deep Learning",
+      "SQL Fundamentals Course"
     ]
-  }
+  },
+
+  leadership: [
+    {
+      role: "General Secretary",
+      organization: "SPICMACAY",
+      period: "2018-2019",
+      description: "Led a team of 60+ members for 4 major events featuring international level classical artists",
+      achievements: [
+        "Managed a budget of ₹3.5 Lakh",
+        "Organized 4 major cultural events",
+        "Led team of 60+ members"
+      ]
+    },
+    {
+      role: "C++ Mentor", 
+      organization: "Thapar Institute",
+      period: "2019",
+      description: "Mentored 10+ students in a mentor/learner program",
+      achievements: [
+        "Guided students in competitive programming",
+        "Conducted technical workshops",
+        "Improved programming fundamentals"
+      ]
+    },
+    {
+      role: "Head Management",
+      organization: "Virsa 2018 - Annual Punjabi Cultural Festival",
+      period: "March 2018 - October 2018",
+      description: "Jointly managed a team of 200+ members for 15+ events in a 4 day long fest",
+      achievements: [
+        "Managed 200+ team members",
+        "Coordinated 15+ events",
+        "4-day festival execution"
+      ]
+    }
+  ]
 };
 
 export default portfolioData;
