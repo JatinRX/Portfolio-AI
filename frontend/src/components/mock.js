@@ -13,6 +13,111 @@ export const portfolioData = {
     profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
     bio: "Senior Unreal Engine Developer with 5+ years of expertise in gameplay programming, network multiplayer systems, and cross-platform game development. Currently spearheading gameplay features for top-rated mobile games while actively exploring AI applications in game development."
   },
+
+  // Current Major Work - Dream Cricket
+  currentWork: {
+    title: "Dream Cricket 2025",
+    subtitle: "Revolutionizing Mobile Cricket Gaming",
+    company: "Dream Game Studios",
+    description: "Leading the development of India's most realistic 3D cricket game, delivering breathtaking realism and innovative gameplay to millions of cricket enthusiasts worldwide.",
+    achievements: [
+      "4.6★ rating with 10M+ downloads on Google Play Store",
+      "Architected real-time PvP multiplayer infrastructure supporting thousands of concurrent players",
+      "Developed state-of-the-art physics engine for realistic ball mechanics and player animations",
+      "Implemented advanced 3D avatar system featuring licensed cricket stars like Suryakumar Yadav, Ishan Kishan, and legends like Harbhajan Singh",
+      "Created dynamic camera system with 5 broadcast-quality viewing angles",
+      "Designed intuitive mobile controls optimizing strategy and execution",
+      "Built comprehensive anti-cheat system maintaining competitive integrity"
+    ],
+    technologies: ["Unreal Engine 5", "C++ Gameplay Programming", "Network Multiplayer", "Advanced Physics", "Real-time Rendering", "Mobile Optimization"],
+    features: [
+      "Photorealistic 3D cricket with licensed players",
+      "Real-time PvP multiplayer battles",
+      "Advanced physics and ball mechanics", 
+      "5 dynamic camera angles including TV broadcast views",
+      "Intuitive mobile-first controls",
+      "Dream Team assembly with current and legendary players",
+      "State-of-the-art bowling animations and controls"
+    ],
+    impact: "Transforming how cricket fans experience their favorite sport on mobile devices, bringing console-quality gaming to smartphones"
+  },
+
+  // Future Vision & What Sets Apart
+  futureVision: {
+    title: "The Future of Interactive Entertainment",
+    subtitle: "Where AI Meets Gaming Innovation",
+    pillars: [
+      {
+        title: "AI-Driven Game Development",
+        description: "Pioneering the integration of machine learning in game development workflows, from procedural content generation to intelligent player behavior analysis.",
+        technologies: ["Neural Networks", "Procedural Generation", "Player Behavior AI", "Adaptive Difficulty"],
+        vision: "Creating games that evolve and adapt to each player's unique style and preferences in real-time."
+      },
+      {
+        title: "Next-Generation Multiplayer",
+        description: "Developing advanced networking architectures that support massive multiplayer experiences with zero-latency interactions and intelligent matchmaking.",
+        technologies: ["Cloud Gaming", "Edge Computing", "Predictive Networking", "Smart Matchmaking"],
+        vision: "Building the infrastructure for the next generation of massively multiplayer experiences."
+      },
+      {
+        title: "Cross-Platform Innovation",
+        description: "Exploring cutting-edge technologies like VR/AR integration, blockchain gaming, and cloud-native game streaming solutions.",
+        technologies: ["VR/AR Integration", "Blockchain Gaming", "Cloud Streaming", "Cross-Platform Sync"],
+        vision: "Breaking down barriers between platforms to create truly unified gaming experiences."
+      }
+    ]
+  },
+
+  // What Sets Me Apart
+  uniqueValue: {
+    title: "What Sets Me Apart",
+    differentiators: [
+      {
+        title: "Technical Excellence & Innovation Bridge",
+        description: "Unique combination of deep technical expertise in traditional game development with cutting-edge AI/ML knowledge, positioning me at the forefront of next-generation game development.",
+        icon: "⚡",
+        details: [
+          "5+ years of production-grade game development experience",
+          "Proven track record with 10M+ download games",
+          "Active research in AI applications for game development",
+          "Cross-disciplinary expertise spanning gameplay, networking, and AI"
+        ]
+      },
+      {
+        title: "Scale-Focused Problem Solving",
+        description: "Specialized in architecting solutions for massive-scale multiplayer games, with proven ability to handle millions of concurrent users and real-time interactions.",
+        icon: "🚀",
+        details: [
+          "Real-time multiplayer systems serving millions",
+          "Performance optimization for mobile platforms",
+          "Scalable anti-cheat and security implementations",
+          "Data-driven analytics and player behavior insights"
+        ]
+      },
+      {
+        title: "Future-Forward Vision",
+        description: "Continuously exploring emerging technologies and their applications in gaming, from AI-enhanced gameplay to blockchain integration and cloud gaming solutions.",
+        icon: "🔮",
+        details: [
+          "AI/ML integration in game mechanics and development workflows",
+          "Blockchain gaming and digital asset management research",
+          "Cloud gaming and streaming technology exploration",
+          "VR/AR integration with traditional gameplay mechanics"
+        ]
+      },
+      {
+        title: "Industry Leadership & Mentorship", 
+        description: "Proven track record of technical leadership, team management, and knowledge sharing, with experience guiding teams through complex technical challenges.",
+        icon: "👥",
+        details: [
+          "Led cross-functional teams of 60+ members",
+          "Mentored 10+ developers in game programming",
+          "Reduced development iteration time by 50% through custom tooling",
+          "Created scalable development workflows and best practices"
+        ]
+      }
+    ]
+  },
   
   skills: {
     gamedev: [
