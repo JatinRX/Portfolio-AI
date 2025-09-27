@@ -18,30 +18,22 @@ export const portfolioData = {
 
   // Current Major Work - Dream Cricket
   currentWork: {
-    title: "Dream Cricket 2025",
-    subtitle: "Revolutionizing Mobile Cricket Gaming",
+    title: "Dream Cricket 2024",
+    subtitle: "Mobile Cricket Gaming",
     company: "Dream Game Studios",
-    description: "Leading the development of India's most realistic 3D cricket game, delivering breathtaking realism and innovative gameplay to millions of cricket enthusiasts worldwide.",
-    achievements: [
-      "4.6★ rating with 10M+ downloads on Google Play Store",
-      "Architected real-time PvP multiplayer infrastructure supporting thousands of concurrent players",
-      "Developed state-of-the-art physics engine for realistic ball mechanics and player animations",
-      "Implemented advanced 3D avatar system featuring licensed cricket stars like Suryakumar Yadav, Ishan Kishan, and legends like Harbhajan Singh",
-      "Created dynamic camera system with 5 broadcast-quality viewing angles",
-      "Designed intuitive mobile controls optimizing strategy and execution",
-      "Built comprehensive anti-cheat system maintaining competitive integrity"
+    description: "Working on India's popular cricket mobile game with 4.6★ rating on Play Store.",
+    myContributions: [
+      "Designed and implemented network multiplayer mode for real-time competitive gameplay",
+      "Individually handled disconnection and rejoining scenarios in multiplayer",
+      "Implemented anti-hack strategies to ensure fair gameplay for all users",
+      "Created interactive user gameplay onboarding system for first-time users",
+      "Implemented Audio and Commentary systems in the game",
+      "Worked on shot training and shot selection algorithm for Batting mechanics",
+      "Developed various in-house tools for Design and Art teams",
+      "Contributed to Game Analytics, Camera systems, and UI development"
     ],
-    technologies: ["Unreal Engine 5", "C++ Gameplay Programming", "Network Multiplayer", "Advanced Physics", "Real-time Rendering", "Mobile Optimization"],
-    features: [
-      "Photorealistic 3D cricket with licensed players",
-      "Real-time PvP multiplayer battles",
-      "Advanced physics and ball mechanics", 
-      "5 dynamic camera angles including TV broadcast views",
-      "Intuitive mobile-first controls",
-      "Dream Team assembly with current and legendary players",
-      "State-of-the-art bowling animations and controls"
-    ],
-    impact: "Transforming how cricket fans experience their favorite sport on mobile devices, bringing console-quality gaming to smartphones"
+    technologies: ["Unreal Engine", "C++ Gameplay Programming", "Network Multiplayer", "Blueprint Scripting", "Game Analytics"],
+    impact: "Contributing to a game that serves millions of cricket fans with engaging multiplayer experiences"
   },
 
   // Core Strengths & Expertise
