@@ -66,27 +66,29 @@ export const portfolioData = {
   
   skills: {
     gamedev: [
-      "Unreal Engine 5/4",
-      "C++ Gameplay Programming", 
+      "Unreal Engine 4/5",
+      "C++ & OOPs", 
       "Blueprint Scripting",
       "Network Multiplayer",
       "Game Design Patterns",
-      "UMG UI Systems"
+      "UMG UI Systems",
+      "Gameplay Framework"
     ],
     programming: [
       "C++",
       "JavaScript", 
-      "TypeScript",
-      "Python",
       "Angular",
-      "Unity Engine"
+      "Data Structures",
+      "Vector Maths",
+      "Algebra",
+      "Redux Architecture"
     ],
-    emerging: [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Neural Networks",
-      "NLP Applications",
-      "Procedural Generation"
+    tools: [
+      "Perforce",
+      "Unity Engine",
+      "Rasa Framework",
+      "Game Analytics",
+      "Cross-platform Development"
     ]
   },
 
