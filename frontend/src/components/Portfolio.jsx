@@ -269,71 +269,191 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="py-20 bg-slate-800/30">
+      {/* Current Work - Dream Cricket Section */}
+      <section id="current-work" className="py-20 bg-gradient-to-r from-slate-900 via-green-900/10 to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
-            <p className="text-xl text-slate-300">Showcasing innovation in game development and AI integration</p>
+            <h2 className="text-4xl font-bold text-white mb-4">Current Major Work</h2>
+            <p className="text-xl text-slate-300">Leading the development of India's most realistic 3D cricket game</p>
+          </div>
+
+          <div className="gaming-card mb-12 border-2 border-green-400/30">
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h3 className="text-3xl font-bold gradient-text mb-2">{portfolioData.currentWork.title}</h3>
+                <p className="text-xl text-green-400 mb-2">{portfolioData.currentWork.subtitle}</p>
+                <p className="text-slate-300 flex items-center">
+                  <Award className="h-5 w-5 text-green-400 mr-2" />
+                  {portfolioData.currentWork.company}
+                </p>
+              </div>
+              <a
+                href="https://dreamcricket.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-gaming inline-flex items-center gap-2"
+              >
+                <ExternalLink className="h-5 w-5" />
+                Visit Game
+              </a>
+            </div>
+            
+            <p className="text-lg text-slate-300 mb-8">{portfolioData.currentWork.description}</p>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
+                  <Zap className="h-6 w-6 text-green-400 mr-2" />
+                  Key Achievements
+                </h4>
+                <ul className="space-y-3">
+                  {portfolioData.currentWork.achievements.map((achievement, index) => (
+                    <li key={index} className="flex items-start">
+                      <ChevronRight className="h-5 w-5 text-green-400 mr-2 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-300">{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div>
+                <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
+                  <Star className="h-6 w-6 text-yellow-400 mr-2" />
+                  Game Features
+                </h4>
+                <ul className="space-y-2">
+                  {portfolioData.currentWork.features.map((feature, index) => (
+                    <li key={index} className="flex items-start">
+                      <Star className="h-4 w-4 text-yellow-400 mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-slate-300 text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-6">
+              {portfolioData.currentWork.technologies.map((tech, index) => (
+                <span
+                  key={index}
+                  className="bg-green-400/10 text-green-400 px-3 py-1 rounded-full text-sm border border-green-400/20"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <div className="bg-green-400/5 border border-green-400/20 rounded-lg p-4">
+              <p className="text-green-400 font-medium text-center">{portfolioData.currentWork.impact}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Future Vision & What Sets Apart */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold gradient-text mb-4">{portfolioData.futureVision.title}</h2>
+            <p className="text-xl text-slate-300">{portfolioData.futureVision.subtitle}</p>
+          </div>
+
+          <div className="gaming-grid mb-16">
+            {portfolioData.futureVision.pillars.map((pillar, index) => (
+              <div key={index} className="gaming-card">
+                <h3 className="text-2xl font-semibold text-white mb-3">{pillar.title}</h3>
+                <p className="text-slate-300 mb-4">{pillar.description}</p>
+                
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {pillar.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="text-sm bg-purple-400/10 text-purple-400 px-2 py-1 rounded border border-purple-400/20"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="bg-slate-700/30 border border-slate-600 rounded-lg p-4">
+                  <p className="text-slate-300 italic text-sm">"{pillar.vision}"</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* What Sets Me Apart */}
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-white mb-4">{portfolioData.uniqueValue.title}</h2>
           </div>
 
           <div className="gaming-grid">
-            {portfolioData.projects.map((project, index) => (
+            {portfolioData.uniqueValue.differentiators.map((diff, index) => (
               <div key={index} className="gaming-card group">
-                <div className="mb-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-sm text-green-400 bg-green-400/10 px-3 py-1 rounded-full">
-                      {project.category}
-                    </span>
-                    {project.videoUrl && (
-                      <a
-                        href={project.videoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-slate-400 hover:text-green-400 transition-colors"
-                      >
-                        <ExternalLink className="h-5 w-5" />
-                      </a>
-                    )}
-                  </div>
-                  <h3 className="text-2xl font-semibold text-white mb-2 group-hover:text-green-400 transition-colors">
-                    {project.title}
+                <div className="flex items-center mb-4">
+                  <span className="text-3xl mr-4">{diff.icon}</span>
+                  <h3 className="text-xl font-semibold text-white group-hover:text-green-400 transition-colors">
+                    {diff.title}
                   </h3>
-                  <p className="text-lg text-green-400 mb-3">{project.subtitle}</p>
-                  <p className="text-slate-300 mb-4">{project.description}</p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="text-sm bg-slate-700 text-slate-300 px-2 py-1 rounded"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="space-y-2">
-                    {project.highlights.map((highlight, hlIndex) => (
-                      <div key={hlIndex} className="flex items-center text-sm text-slate-400">
-                        <Star className="h-4 w-4 text-yellow-400 mr-2" />
-                        {highlight}
-                      </div>
-                    ))}
-                  </div>
                 </div>
+                <p className="text-slate-300 mb-4">{diff.description}</p>
+                <ul className="space-y-2">
+                  {diff.details.map((detail, detailIndex) => (
+                    <li key={detailIndex} className="flex items-start">
+                      <ChevronRight className="h-4 w-4 text-green-400 mr-2 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-400 text-sm">{detail}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Earlier Projects - Reduced Prominence */}
+      <section className="py-16 bg-slate-800/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl font-semibold text-slate-300 mb-2">Earlier Learning Projects</h2>
+            <p className="text-slate-400">Foundation projects that shaped my game development journey</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {portfolioData.earlyProjects.map((project, index) => (
+              <div key={index} className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-slate-600 transition-colors">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs text-slate-400 bg-slate-700 px-2 py-1 rounded">
+                    {project.category}
+                  </span>
+                  {project.videoUrl && (
+                    <a
+                      href={project.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-500 hover:text-green-400 transition-colors"
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  )}
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">{project.title}</h3>
+                <p className="text-sm text-green-400 mb-2">{project.subtitle}</p>
+                <p className="text-slate-400 text-sm mb-3">{project.description}</p>
                 
-                {project.videoUrl && (
-                  <a
-                    href={project.videoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-gaming-outline w-full inline-flex items-center justify-center gap-2"
-                  >
-                    <Play className="h-4 w-4" />
-                    Watch Demo
-                  </a>
-                )}
+                <div className="flex flex-wrap gap-1">
+                  {project.technologies.slice(0, 2).map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="text-xs bg-slate-700 text-slate-400 px-2 py-1 rounded"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                  {project.technologies.length > 2 && (
+                    <span className="text-xs text-slate-500">+{project.technologies.length - 2}</span>
+                  )}
+                </div>
               </div>
             ))}
           </div>
