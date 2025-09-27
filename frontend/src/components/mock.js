@@ -11,7 +11,7 @@ export const portfolioData = {
     twitter: "jatin_rx",
     youtube: "Jatin Garg",
     location: "Baner, Pune, Maharashtra",
-    profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    profileImage: "https://customer-assets.emergentagent.com/job_tech-innovator-32/artifacts/roldp6t7_ProfileImage.png",
     bio: "Computer engineer passionate about building interactive experiences that connect people worldwide. With 5+ years in game development, I specialize in multiplayer systems and engaging gameplay. Currently exploring AI applications in player experiences and development workflows. Always excited about the intersection of technology and creativity."
   },
 
