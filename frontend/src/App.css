@@ -1,34 +1,254 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Gaming Portfolio Dark Theme - Softer Neon Green */
+:root {
+  /* Dark Theme Base */
+  --bg-primary: rgb(12, 14, 16);
+  --bg-secondary: rgb(20, 23, 26);
+  --bg-tertiary: rgb(28, 32, 36);
+  --bg-elevated: rgb(35, 40, 45);
+  
+  /* Text Hierarchy */
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary: rgb(200, 210, 220);
+  --text-muted: rgb(140, 150, 160);
+  --text-accent: rgb(100, 120, 140);
+  
+  /* Border System */
+  --border-primary: rgb(45, 50, 55);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(120, 220, 80, 0.3);
+  
+  /* Softer Neon Green Accents */
+  --accent-primary: rgb(120, 220, 80);      /* Softer green */
+  --accent-secondary: rgb(100, 200, 60);    /* Hover state */
+  --accent-tertiary: rgb(80, 180, 40);      /* Active state */
+  --accent-bg: rgba(120, 220, 80, 0.1);    /* Subtle backgrounds */
+  --accent-glow: rgba(120, 220, 80, 0.2);  /* Glow effects */
+  
+  /* Gaming UI Colors */
+  --gaming-blue: rgb(64, 156, 255);
+  --gaming-purple: rgb(138, 92, 246);
+  --gaming-orange: rgb(251, 146, 60);
+  --warning: rgb(245, 158, 11);
+  --error: rgb(239, 68, 68);
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  
+  /* Shadow System */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 20px rgba(120, 220, 80, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-.App-link {
-    color: #61dafb;
+/* Gaming UI Button Styles */
+.btn-gaming {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border: 2px solid var(--accent-primary);
+  border-radius: 8px;
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.btn-gaming:hover {
+  background: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-gaming:active {
+  transform: translateY(0);
+}
+
+.btn-gaming-outline {
+  background: transparent;
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
+.btn-gaming-outline:hover {
+  background: var(--accent-bg);
+  color: var(--accent-primary);
+}
+
+.btn-gaming-ghost {
+  background: transparent;
+  border: 2px solid transparent;
+  color: var(--text-secondary);
+}
+
+.btn-gaming-ghost:hover {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-primary);
+}
+
+/* Gaming Card Styles */
+.gaming-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.gaming-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-primary), var(--gaming-blue));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gaming-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-lg);
+}
+
+.gaming-card:hover::before {
+  opacity: 1;
+}
+
+/* Glitch Effect */
+.glitch-effect {
+  position: relative;
+}
+
+.glitch-effect:hover::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  top: 0;
+  color: var(--accent-primary);
+  background: var(--bg-primary);
+  overflow: hidden;
+  animation: glitch 0.3s ease-in-out;
+}
+
+@keyframes glitch {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+}
+
+/* Neon Glow Text */
+.neon-text {
+  color: var(--accent-primary);
+  text-shadow: 
+    0 0 5px var(--accent-glow),
+    0 0 10px var(--accent-glow),
+    0 0 20px var(--accent-glow);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-secondary);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(45deg, var(--accent-primary), var(--gaming-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gaming Grid */
+.gaming-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gaming-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .btn-gaming {
+    width: 100%;
+    max-width: 300px;
+  }
 }
