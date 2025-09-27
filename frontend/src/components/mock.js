@@ -79,8 +79,7 @@ export const portfolioData = {
       "Git Version Control",
       "Visual Studio Code",
       "Visual Studio Community",
-      "Rider IDE",
-      "GitHub Desktop"
+      "Rider IDE"
     ]
   },
 
