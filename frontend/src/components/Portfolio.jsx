@@ -131,7 +131,7 @@ const Portfolio = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button 
-                onClick={() => scrollToSection('projects')}
+                onClick={() => scrollToSection('current-work')}
                 className="btn-gaming inline-flex items-center gap-2"
               >
                 <Play className="h-5 w-5" />
