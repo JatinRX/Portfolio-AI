@@ -510,15 +510,13 @@ const Portfolio = () => {
             </a>
 
             <a
-              href={`https://wa.me/${portfolioData.personal.whatsapp}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`tel:${portfolioData.personal.phone}`}
               className="gaming-card group text-center hover:scale-105 transition-transform"
             >
               <MessageCircle className="h-12 w-12 text-green-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-semibold text-white mb-2">WhatsApp</h3>
-              <p className="text-slate-300">Quick message on WhatsApp</p>
-              <p className="text-green-400 mt-2 text-sm">Let's chat instantly</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
+              <p className="text-slate-300">Direct phone contact</p>
+              <p className="text-green-400 mt-2 text-sm">{portfolioData.personal.phone}</p>
             </a>
 
             <a
