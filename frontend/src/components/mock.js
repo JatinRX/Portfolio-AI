@@ -188,26 +188,7 @@ export const portfolioData = {
     }
   ],
 
-  testimonials: [
-    {
-      name: "Sarah Chen",
-      role: "Lead Game Designer at Dream Game Studios", 
-      content: "Jatin's technical expertise and innovative approach to gameplay programming has been instrumental in our success. His ability to bridge traditional game development with AI technologies is remarkable.",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      name: "Rahul Sharma", 
-      role: "Senior Developer at Games24x7",
-      content: "Working with Jatin on the Unity migration was seamless. His problem-solving skills and attention to detail make him an invaluable team member.",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      name: "Dr. Priya Patel",
-      role: "AI Research Lead",
-      content: "Jatin's exploration into AI applications for game development shows remarkable vision. His technical depth combined with creative thinking opens new possibilities.",
-      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face"
-    }
-  ],
+  // Removed testimonials section as requested
 
   education: {
     degree: "Bachelor of Engineering - Computer Science",
