@@ -118,7 +118,7 @@ const Portfolio = () => {
             <img
               src={portfolioData.personal.profileImage}
               alt={portfolioData.personal.name}
-              className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-green-400/30 shadow-2xl"
+              className="w-40 h-40 rounded-full mx-auto mb-8 border-4 border-green-400/30 shadow-2xl hover:scale-105 transition-transform duration-300"
             />
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
               <span className="text-white">{portfolioData.personal.name}</span>
