@@ -76,8 +76,9 @@ export const portfolioData = {
     tools: [
       "Perforce",
       "Unity Engine",
-      "Rasa Framework",
-      "Cross-platform Development"
+      "Git Version Control",
+      "Cross-platform Development",
+      "Agile Development"
     ]
   },
 
