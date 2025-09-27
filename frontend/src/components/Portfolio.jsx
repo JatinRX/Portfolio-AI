@@ -27,7 +27,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'experience', 'projects', 'testimonials', 'contact'];
+      const sections = ['hero', 'about', 'experience', 'current-work', 'testimonials', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
