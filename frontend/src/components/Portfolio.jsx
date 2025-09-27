@@ -96,10 +96,10 @@ const Portfolio = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-slate-800 border-t border-slate-700">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {['About', 'Experience', 'Projects', 'Contact'].map((item) => (
+              {['About', 'Experience', 'Current Work', 'Contact'].map((item) => (
                 <button
                   key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
+                  onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
                   className="block w-full text-left px-3 py-2 text-slate-300 hover:text-white hover:bg-slate-700 rounded-md"
                 >
                   {item}
