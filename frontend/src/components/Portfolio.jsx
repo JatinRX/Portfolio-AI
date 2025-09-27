@@ -64,12 +64,12 @@ const Portfolio = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="flex items-center space-x-8">
-                {['About', 'Experience', 'Projects', 'Contact'].map((item) => (
+                {['About', 'Experience', 'Current Work', 'Contact'].map((item) => (
                   <button
                     key={item}
-                    onClick={() => scrollToSection(item.toLowerCase())}
+                    onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
                     className={`text-sm font-medium transition-colors ${
-                      activeSection === item.toLowerCase()
+                      activeSection === item.toLowerCase().replace(' ', '-')
                         ? 'text-green-400'
                         : 'text-slate-300 hover:text-white'
                     }`}
