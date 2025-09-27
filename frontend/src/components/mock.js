@@ -77,8 +77,10 @@ export const portfolioData = {
       "Perforce",
       "Unity Engine",
       "Git Version Control",
-      "Cross-platform Development",
-      "Agile Development"
+      "Visual Studio Code",
+      "Visual Studio Community",
+      "Rider IDE",
+      "GitHub Desktop"
     ]
   },
 
