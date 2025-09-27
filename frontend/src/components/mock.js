@@ -182,51 +182,39 @@ export const portfolioData = {
     }
   ],
 
-  projects: [
+  // Earlier Projects (Reduced prominence)
+  earlyProjects: [
     {
       title: "FALLER",
-      subtitle: "Third-Person Puzzle Adventure",
-      description: "Innovative puzzle mechanics with progressive difficulty scaling. Environmental storytelling through interactive level design.",
+      subtitle: "Puzzle Adventure Game",
+      description: "Epic Mega Jam 21 entry showcasing puzzle mechanics and environmental storytelling.",
       technologies: ["Unreal Engine", "C++", "Blueprint"],
       videoUrl: "https://www.youtube.com/watch?v=1DRU7KQgVFw",
-      highlights: ["Epic Mega Jam 21 Entry", "60fps Performance", "Multi-platform"],
-      category: "Game Development"
+      category: "Game Jam"
     },
     {
       title: "The Construction Site", 
-      subtitle: "Interactive Environment Demo",
-      description: "Photorealistic environment showcasing technical and artistic skills with advanced lighting and material systems.",
+      subtitle: "Technical Environment Demo",
+      description: "Photorealistic environment with advanced lighting and combat systems.",
       technologies: ["Unreal Engine", "Quixel Megascans", "C++"],
       videoUrl: "https://www.youtube.com/watch?v=2p2oxeHWXGw",
-      highlights: ["Photorealistic Graphics", "Combat System", "Object Interaction"],
       category: "Technical Demo"
     },
     {
       title: "Go Jerry Go",
-      subtitle: "Side-Scrolling Adventure",
-      description: "First complete game project demonstrating core gameplay mechanics and level progression systems.",
-      technologies: ["Unreal Engine 4", "Blueprint", "Game Design"],
+      subtitle: "Side-Scrolling Game",
+      description: "First complete game demonstrating core gameplay mechanics.",
+      technologies: ["Unreal Engine 4", "Blueprint"],
       videoUrl: "https://www.youtube.com/watch?v=Xguw8_miWLk", 
-      highlights: ["First Complete Game", "Side-Scroller", "Level Progression"],
-      category: "Game Development"
+      category: "Personal Project"
     },
     {
       title: "ESCAPE",
-      subtitle: "Puzzle GameJam Entry", 
-      description: "Time-constrained puzzle game developed during game jam, showcasing rapid prototyping and creative problem-solving.",
-      technologies: ["Unreal Engine 4", "Puzzle Design", "Rapid Prototyping"],
+      subtitle: "GameJam Entry", 
+      description: "Rapid prototype puzzle game developed in 48 hours.",
+      technologies: ["Unreal Engine 4", "Rapid Prototyping"],
       videoUrl: "https://www.youtube.com/watch?v=PbHedSFA1tw",
-      highlights: ["Game Jam Winner", "Innovative Puzzles", "48-hour Development"],
       category: "Game Jam"
-    },
-    {
-      title: "AI-Enhanced Development Tools",
-      subtitle: "Procedural Content Generation",
-      description: "Exploring machine learning applications in procedural generation and AI-assisted level design tools.",
-      technologies: ["Python", "Machine Learning", "Procedural Generation", "AI"],
-      videoUrl: null,
-      highlights: ["ML Integration", "Procedural Tools", "AI Research"],
-      category: "AI Research"
     }
   ],
 
