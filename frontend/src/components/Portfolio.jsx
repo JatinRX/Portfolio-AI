@@ -300,36 +300,19 @@ const Portfolio = () => {
             
             <p className="text-lg text-slate-300 mb-8">{portfolioData.currentWork.description}</p>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div>
-                <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                  <Zap className="h-6 w-6 text-green-400 mr-2" />
-                  Key Achievements
-                </h4>
-                <ul className="space-y-3">
-                  {portfolioData.currentWork.achievements.map((achievement, index) => (
-                    <li key={index} className="flex items-start">
-                      <ChevronRight className="h-5 w-5 text-green-400 mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-slate-300">{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                  <Star className="h-6 w-6 text-yellow-400 mr-2" />
-                  Game Features
-                </h4>
-                <ul className="space-y-2">
-                  {portfolioData.currentWork.features.map((feature, index) => (
-                    <li key={index} className="flex items-start">
-                      <Star className="h-4 w-4 text-yellow-400 mr-2 mt-1 flex-shrink-0" />
-                      <span className="text-slate-300 text-sm">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div className="mb-8">
+              <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
+                <Code className="h-6 w-6 text-green-400 mr-2" />
+                My Contributions
+              </h4>
+              <ul className="space-y-3">
+                {portfolioData.currentWork.myContributions.map((contribution, index) => (
+                  <li key={index} className="flex items-start">
+                    <ChevronRight className="h-5 w-5 text-green-400 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-slate-300">{contribution}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <div className="flex flex-wrap gap-2 mb-6">
