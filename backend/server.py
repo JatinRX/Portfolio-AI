@@ -38,6 +38,94 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
+# Contact Form Models
+class ContactForm(BaseModel):
+    name: str = Field(..., min_length=2, max_length=100)
+    email: EmailStr
+    subject: str = Field(..., min_length=5, max_length=200)
+    message: str = Field(..., min_length=10, max_length=2000)
+
+class ContactResponse(BaseModel):
+    success: bool
+    message: str
+
+# Portfolio Models
+class PersonalInfo(BaseModel):
+    name: str
+    title: str
+    tagline: str
+    email: str
+    phone: Optional[str] = None
+    linkedin: str
+    twitter: Optional[str] = None
+    youtube: Optional[str] = None
+    location: str
+    profileImage: str
+    bio: str
+
+class Experience(BaseModel):
+    company: str
+    location: str
+    role: str
+    period: str
+    achievements: List[str]
+
+class Project(BaseModel):
+    title: str
+    subtitle: str
+    description: str
+    technologies: List[str]
+    videoUrl: Optional[str] = None
+    category: str
+
+class Skills(BaseModel):
+    gamedev: List[str]
+    programming: List[str]
+    tools: List[str]
+
+class CurrentWork(BaseModel):
+    title: str
+    subtitle: str
+    company: str
+    description: str
+    myContributions: List[str]
+    technologies: List[str]
+    impact: str
+
+class CoreStrength(BaseModel):
+    title: str
+    description: str
+    skills: List[str]
+
+class CoreStrengths(BaseModel):
+    title: str
+    areas: List[CoreStrength]
+
+class Education(BaseModel):
+    degree: str
+    institution: str
+    period: str
+    cgpa: str
+    additionalEducation: dict
+    certifications: List[str]
+
+class Leadership(BaseModel):
+    role: str
+    organization: str
+    period: str
+    description: str
+    achievements: List[str]
+
+class Portfolio(BaseModel):
+    personal: PersonalInfo
+    currentWork: CurrentWork
+    coreStrengths: CoreStrengths
+    skills: Skills
+    experience: List[Experience]
+    earlyProjects: List[Project]
+    education: Education
+    leadership: List[Leadership]
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
