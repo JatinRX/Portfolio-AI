@@ -564,8 +564,6 @@ const Portfolio = () => {
         </div>
       </footer>
 
-      {/* Toast Notifications */}
-      <Toaster />
     </div>
   );
 };
