@@ -189,7 +189,7 @@ async def submit_contact_form(contact_data: ContactForm):
 async def get_contacts():
     """Get all contact form submissions - admin endpoint"""
     try:
-        contacts = await db.contacts.find().sort("timestamp", -1).to_list(1000)
+        contacts = await db.contacts.find({}, {"_id": 0}).sort("timestamp", -1).to_list(1000)
         return {"success": True, "data": contacts}
     except Exception as e:
         logger.error(f"Error fetching contacts: {str(e)}")
