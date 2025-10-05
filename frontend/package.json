@@ -1,4 +1,5 @@
 {
+  "homepage": "https://JatinRX.github.io/Portfolio-AI",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -55,6 +56,8 @@
     "zod": "^3.24.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test"
