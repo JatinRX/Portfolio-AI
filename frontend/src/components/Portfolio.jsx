@@ -20,8 +20,6 @@ import {
   X
 } from 'lucide-react';
 import portfolioData from './mock.js';
-import ContactForm from './ContactForm';
-import { Toaster } from '../components/ui/toaster';
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
