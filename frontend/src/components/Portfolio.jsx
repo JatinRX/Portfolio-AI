@@ -498,75 +498,47 @@ const Portfolio = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Contact Form */}
-            <ContactForm />
-            
-            {/* Contact Info & Links */}
-            <div className="space-y-8">
-              <div className="grid gap-6">
-                <a
-                  href={`mailto:${portfolioData.personal.email}`}
-                  className="gaming-card group text-center hover:scale-105 transition-transform"
-                >
-                  <Mail className="h-12 w-12 text-green-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                  <h3 className="text-xl font-semibold text-white mb-2">Direct Email</h3>
-                  <p className="text-slate-300">For urgent inquiries</p>
-                  <p className="text-green-400 mt-2 text-sm">{portfolioData.personal.email}</p>
-                </a>
+          <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
+            <a
+              href={`mailto:${portfolioData.personal.email}?subject=Collaboration Opportunity&body=Hi Jatin,%0D%0A%0D%0AI'm interested in discussing a collaboration opportunity. Looking forward to connecting!`}
+              className="gaming-card group text-center hover:scale-105 transition-transform"
+            >
+              <Mail className="h-12 w-12 text-green-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-xl font-semibold text-white mb-2">Email Me</h3>
+              <p className="text-slate-300">Let's discuss opportunities</p>
+              <p className="text-green-400 mt-2 text-sm">{portfolioData.personal.email}</p>
+            </a>
 
-                <a
-                  href={`https://${portfolioData.personal.linkedin}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="gaming-card group text-center hover:scale-105 transition-transform"
-                >
-                  <Linkedin className="h-12 w-12 text-green-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                  <h3 className="text-xl font-semibold text-white mb-2">LinkedIn</h3>
-                  <p className="text-slate-300">Connect professionally</p>
-                  <p className="text-green-400 mt-2 text-sm">Let's network</p>
-                </a>
-              </div>
+            <a
+              href={`https://${portfolioData.personal.linkedin}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gaming-card group text-center hover:scale-105 transition-transform"
+            >
+              <Linkedin className="h-12 w-12 text-green-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-xl font-semibold text-white mb-2">LinkedIn</h3>
+              <p className="text-slate-300">Connect professionally</p>
+              <p className="text-green-400 mt-2 text-sm">View my network</p>
+            </a>
+          </div>
 
-              <div className="gaming-card">
-                <h3 className="text-xl font-semibold text-white mb-4">What I'm Looking For</h3>
-                <ul className="space-y-3 text-slate-300">
-                  <li className="flex items-start">
-                    <ChevronRight className="h-5 w-5 text-green-400 mr-2 mt-0.5 flex-shrink-0" />
-                    Game development opportunities and collaborations
-                  </li>
-                  <li className="flex items-start">
-                    <ChevronRight className="h-5 w-5 text-green-400 mr-2 mt-0.5 flex-shrink-0" />
-                    AI/ML projects in gaming and interactive media
-                  </li>
-                  <li className="flex items-start">
-                    <ChevronRight className="h-5 w-5 text-green-400 mr-2 mt-0.5 flex-shrink-0" />
-                    Technical consulting and mentorship opportunities
-                  </li>
-                  <li className="flex items-start">
-                    <ChevronRight className="h-5 w-5 text-green-400 mr-2 mt-0.5 flex-shrink-0" />
-                    Speaking engagements and industry events
-                  </li>
-                </ul>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <a
-                  href={`mailto:${portfolioData.personal.email}?subject=Collaboration Opportunity`}
-                  className="btn-gaming inline-flex items-center justify-center gap-2"
-                >
-                  <Zap className="h-5 w-5" />
-                  Quick Email
-                </a>
-                <a
-                  href="#"
-                  className="btn-gaming-outline inline-flex items-center justify-center gap-2"
-                >
-                  <Download className="h-5 w-5" />
-                  Download Resume
-                </a>
-              </div>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href={`mailto:${portfolioData.personal.email}?subject=Game Development Project&body=Hi Jatin,%0D%0A%0D%0AI have a game development project I'd like to discuss with you.%0D%0A%0D%0AProject Details:%0D%0A-%0D%0A-%0D%0A%0D%0ALooking forward to hearing from you!`}
+              className="btn-gaming inline-flex items-center gap-2"
+            >
+              <Zap className="h-5 w-5" />
+              Start a Project
+            </a>
+            <a
+              href={`https://${portfolioData.personal.linkedin}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gaming-outline inline-flex items-center gap-2"
+            >
+              <Linkedin className="h-5 w-5" />
+              Connect on LinkedIn
+            </a>
           </div>
         </div>
       </section>
