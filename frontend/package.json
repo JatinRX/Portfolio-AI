@@ -57,9 +57,9 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d docs",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
-    "build": "react-scripts build && mv build docs",
+    "build": "craco build",
     "test": "craco test"
   },
   "browserslist": {
