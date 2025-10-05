@@ -147,7 +147,7 @@ async def get_status_checks():
 @api_router.get("/portfolio")
 async def get_portfolio():
     """Get portfolio data - for now returning static data, can be moved to DB later"""
-    from .portfolio_data import get_portfolio_data
+    from portfolio_data import get_portfolio_data
     try:
         portfolio_data = get_portfolio_data()
         return {"success": True, "data": portfolio_data}
